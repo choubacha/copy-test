@@ -1,3 +1,4 @@
+// By implementing clone and copy here
 #[derive(Eq, PartialEq, Debug, Clone, Copy)]
 struct Val(i64);
 
@@ -6,6 +7,7 @@ struct Test {
 }
 
 impl Test {
+    // We can "return" the value here through direct memory copy
     fn val(&self) -> Val {
         self.val
     }
